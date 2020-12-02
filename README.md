@@ -1,8 +1,8 @@
-##solar_landing_page
+# solar_landing_page
 
 To practice building a UI from scratch and then turning it into a fully functioning webpage I built this landing page for a fake solar website.   
 To view the final product follow this link:  
-github pages link  
+[GitHub Pages Link](https://paul-schultz.github.io/solar_landing_page/)
 
 To learn about how I built the page keep reading!  
 
