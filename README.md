@@ -1,6 +1,6 @@
 # solar_landing_page
 
-To practice building a UI from scratch and then turning it into a fully functioning webpage I built this landing page for a fake solar website.   
+To practice building a UI from scratch and then turning it into a fully functioning webpage I built this landing page for a fake solar company.   
 To view the final product follow this link:  
 [https://paul-schultz.github.io/solar_landing_page/](https://paul-schultz.github.io/solar_landing_page/)
 
@@ -10,7 +10,7 @@ I started the project by creating a picture of a house with solar panels on it u
 ![Vector Design Gif](./readme_files/gif/vector.gif)  
 
 I decided to use an analagous color palette for the design, for a rich monochromatic look:  
-![Color Palette](./readme_files/img/palette.png)  
+![Color Palette](./readme_files/img/palette.svg)  
 
 Then I exported the asset as an .svg file into my project directory and added a solid background with CSS:  
 ![Before text image](./readme_files/screenshot/before_text.png)  
