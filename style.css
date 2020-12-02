@@ -8,46 +8,134 @@ html {
 body {
     background: url(img/house.svg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 80%;
     background-position: bottom right;
     height: 100vh;
     width: 100%;
     overflow: hidden;
     z-index: 1;
+    font-family: 'B612 Mono', monospace;
+    color: #fff;
 }
 
-.tagline {
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 90vw;
+    margin: auto;
+    margin-top: 1em;
+}
+
+.nav .nav-right .link a  {
+    text-decoration: none;
+    color: inherit;
+    padding: 0 1em;
+    font-weight: 600;
+    transition: color .5s ease-out;
+}
+
+.nav .nav-right .link a:hover {
+    color: #2c82e6;
+}
+
+.first-line {
     position: fixed;
-    top: 20vh;
+    top: 25vh;
     left: 4vh;
 }
 
-.line-1{
+.second-line {
+    position: fixed;
+    top: 35vh;
+    left: 4vh;
+}
+
+.line-1, .line-2{
     position: relative;
     color: white;
-    font-family: 'B612 Mono', monospace;
+    font-weight: 700;
     top: 50%;  
     width: 24em;
     margin: 0 auto;
-    border-right: 2px solid rgba(255,255,255,.75);
+    border-right: 2px solid rgba(255,255,255,.75) ;
     font-size: 180%;
-    text-align: center;
+    text-align: left;
     white-space: nowrap;
     overflow: hidden;
-    transform: translateY(-50%);    
+    transform: translateY(50%);   
+}
+
+.line-2 {
+    border-right: none;
+}
+
+.line-1:hover, .line-2:hover {
+    cursor: default;
+}
+
+.cta-btn {
+    position: fixed;
+    top: 50vh;
+    left: 4vw;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 800;
+    border: 3px solid #fff;
+    padding: 1em;
+    border-radius: 2em;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in 18s forwards ;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1 }
+}
+
+.cta-btn:hover {
+    background-color: white;
+    color: #7bdba1;
 }
 
 /* Animation */
-.anim-typewriter{
-  animation: typewriter 8s steps(44) 1s 1 normal both,
-             blinkTextCursor 500ms steps(44) infinite normal;
+.anim-typewriter1{
+  animation: firstTypewriter 8s steps(44) 1s 1 normal both,
+             firstBlinkTextCursor 500ms steps(44) infinite normal,
+             firstHideBorder 0s ease-in 10s forwards;
 }
-@keyframes typewriter{
+.anim-typewriter2{
+    animation-delay: 20s; 
+    animation: showSecondBorder 0s ease-in 10s forwards,
+               secondTypewriter 8s steps(44) 10s 1 normal both,
+               secondBlinkTextCursor 500ms 10s steps(44)  infinite normal,      
+               hideSecondBorder  0s ease-in 22s forwards;
+}
+
+@keyframes firstTypewriter{
   from{width: 0;}
   to{width: 24em;}
 }
-@keyframes blinkTextCursor{
+@keyframes firstBlinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}
   to{border-right-color: transparent;}
 }
+@keyframes firstHideBorder {
+    to { border-right: none; }
+}
+@keyframes showSecondBorder {
+    to { border-right: 2px solid rgba(255,255,255,.75); }
+}
+@keyframes secondTypewriter {
+from{width: 0;}
+to{width: 24em;}
+}
+@keyframes secondBlinkTextCursor {
+from{border-right-color: rgba(255,255,255,.75);}
+to{border-right-color: transparent;}
+}
+@keyframes hideSecondBorder {
+    to { border-right: none;}
+}
 
+  
