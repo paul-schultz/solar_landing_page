@@ -40,6 +40,10 @@ body {
     color: #2c82e6;
 }
 
+.tablet {
+    display: none;
+}
+
 .first-line {
     position: fixed;
     top: 25vh;
@@ -136,6 +140,21 @@ to{border-right-color: transparent;}
 }
 @keyframes hideSecondBorder {
     to { border-right: none;}
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        background-size: 140%;
+        background-position: bottom;        
+    }
+    .desktop{
+        display: none;
+    }
+    .tablet {
+        display: block;
+        margin-right: 30px;
+        margin-bottom: 10px;
+    }
 }
 
   
