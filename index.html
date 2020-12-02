@@ -3,44 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solar Company</title>
+    <title>ATCQ Solar</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=B612+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-
+    <link rel="icon" href="img/logo.svg">
 </head>
 <body>
-    <div class="nav">
-        <div class="nav-left">
-            <div class="logo">
-                <img src="img/logo.svg" height="50" alt="">
+    <input type="checkbox" id="active" onclick="hideMessage()">
+    <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+    <div class="wrapper">
+        <ul>
+            <li><a href="">Why ATCQ</a></li>
+            <li><a href="">Plans & Services</a></li>
+            <li><a href="">Where's ATCQ?</a></li>
+            <li><a href="">Solar FAQs</a></li>
+            <li><a href="">Qualify Now!</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="nav">
+            <div class="nav-left">
+                <div class="logo">
+                    <img src="img/logo.svg" height="50" alt="">
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="link desktop">
+                    <a href="">Why ATCQ</a>
+                    <a href="">Plans & Services</a>
+                    <a href="">Where's ATCQ?</a>
+                    <a href="">Solar FAQs</a>
+                    <a href="" >Qualify Now!</a>
+                </div>
             </div>
         </div>
-        <div class="nav-right">
-            <div class="link desktop">
-                <a href="">Why ATCQ</a>
-                <a href="">Plans & Services</a>
-                <a href="">Where's ATCQ?</a>
-                <a href="">Solar FAQs</a>
-                <a href="" >Qualify Now!</a>
+        
+        <div id="message">
+            <div class="first-line">
+                <p class="line-1 anim-typewriter1">Say goodbye to electricity bills</p>
             </div>
-            <div class="tablet">
-                <i class="fas fa-bars fa-lg"></i>
+            <div class="second-line">
+                <p class="line-2 anim-typewriter2">Go solar with battery, get $1000...</p>
+            </div>
+            <div class="cta">
+                <a href="" class="cta-btn">See if you qualify <i class="fas fa-arrow-right fa-lg"></i></a>
             </div>
         </div>
+        
     </div>
-
-    
-
-    <div class="first-line">
-        <p class="line-1 anim-typewriter1">Say goodbye to electricity bills</p>
-    </div>
-    <div class="second-line">
-        <p class="line-2 anim-typewriter2">Go solar with battery, get $1000...</p>
-    </div>
-    <div class="cta">
-        <a href="" class="cta-btn">See if you qualify <i class="fas fa-arrow-right fa-lg"></i></a>
-    </div>
+    <script src="./script.js"></script>
 </body>
 </html>
