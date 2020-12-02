@@ -79,6 +79,11 @@ body {
     cursor: default;
 }
 
+.footer {
+    position: absolute;
+    bottom: 0;
+}
+
 .cta-btn {
     position: fixed;
     top: 50vh;
@@ -165,7 +170,7 @@ input,label, .wrapper {
         left: 0;
         height: 100%;
         width: 100%;
-        background: #7bdba1;
+        background: rgba(123, 219, 161, .7);
         clip-path: circle(25px at calc(100% - 45px) 45px);
         transition: all 0.3s ease-in-out;
       }
